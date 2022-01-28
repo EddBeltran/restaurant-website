@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Website</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <section class="block">
+    <div class="container">
+      <h2 class="block__header">Platillos <span>favoritos</span></h2>
+      <!-- slider -->
+      <div class="swiper favorites">
+        <div class="swiper-wrapper">
+          <!-- Card 1 -->
+          <div class="swiper-slide favorite-slide">
+            <div class="favorite-slide__head">
+              <img src="images/enchiladas.jpg" alt="..." loading="lazy">
+            </div>
+            <div class="favorite-slide__body">
+                <div class="favorite-slide__body__header">
+                  <h4>Enchiladas Suizas</h4>
+                  <span>$75</span>
+                </div>
+                <p>Tomates, chiles, tortillas de maíz, cebolla... </p>
+                <a>Ordena Aquí</a>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="swiper-slide favorite-slide">
+            <div class="favorite-slide__head">
+              <img src="images/chile_nogada.jpg" alt="..." loading="lazy">
+            </div>
+            <div class="favorite-slide__body">
+                <div class="favorite-slide__body__header">
+                  <h4>Chiles en nogada</h4>
+                  <span>$75</span>
+                </div>
+                <p>Tomates, chiles, tortillas de maíz, cebolla... </p>
+                <a>Ordena Aquí</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="swiper-slide favorite-slide">
+            <div class="favorite-slide__head">
+              <img src="images/pozole.jpg" alt="..." loading="lazy">
+            </div>
+            <div class="favorite-slide__body">
+                <div class="favorite-slide__body__header">
+                  <h4>Pozole</h4>
+                  <span>$75</span>
+                </div>
+                <p>Tomates, chiles, tortillas de maíz, cebolla... </p>
+                <a>Ordena Aquí</a>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  
+  <!-- Scripts -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/favoriteDishesSlider.js"></script>
+</body>
+</html>

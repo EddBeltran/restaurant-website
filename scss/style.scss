@@ -1,0 +1,85 @@
+@import 'config';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-stack;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+//Favorite Dishes
+.favorites {
+    padding: 2rem 1rem;
+    padding-top: 4rem;
+    
+    .favorite-slide {
+        box-shadow: -5px 5px 5px 1px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+
+        &__head {
+            height: 200px;
+            overflow: hidden;
+
+            img {
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+        &__body {
+            height: fit-content;
+            padding: 2rem;
+            position: relative;
+
+            &__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 2rem;
+                padding-bottom: 1.5rem;
+                span {
+                    font-style: italic;
+                    color: gray;
+                }
+            }
+
+            p {
+                font-size: 1.5rem;
+                padding-bottom: 2rem;
+            }
+            
+            a {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #fff;
+                background: $primary-color;
+                border-radius: 20px;
+                padding: 1rem;
+                display: flex;
+                justify-content: center;
+
+            }
+
+            
+        }
+
+    }
+}
+
+@import 'utilities';
+@import 'mobile';
+@import 'buttons';
