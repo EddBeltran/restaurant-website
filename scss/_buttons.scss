@@ -3,10 +3,6 @@
     border-radius: 20px;
     padding: 8px 20px;
     margin: 3px;
-
-    &:hover {
-        transform: scale(0.98);
-    }
 }
 
 .btn-primary {
@@ -18,4 +14,17 @@
 .btn-secondary {
     @extend %btn;
     background: $secondary-color;
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    img {
+        padding-right: 1rem;
+        width: 35px;
+    }
+
 }

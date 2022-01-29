@@ -1,18 +1,19 @@
 .container {
     margin: 0 auto;
     max-width: 1024px;
+    padding: 0 2rem;
 }
 
 .block {
-    padding: 2rem;
+    padding: 3rem 0;
+    &--secondary {
+        background: $secondary-color;
+    }
     &--dark {
-        background: blue;
+        background: $color-dark;
     }
-    &__header {
-        font-size: 2.5rem;
-        color: $secondary-color;
-        span {
-            color: gray;
-        }
-    }
+}
+
+.shadow {
+    box-shadow: -5px 5px 5px 1px rgba(0, 0, 0, 0.1);
 }

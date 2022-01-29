@@ -11,9 +11,29 @@
 </head>
 <body>
 
-  <section class="block">
+    <!-- About Us -->
+    <section class="block">
+      <div class="container">
+        <h2 class="header_title">Sobre <span>nosotros</span></h2>
+        <div class="about-us">
+          <div class="about-us__image">one</div>
+          <div class="about-us__text">two</div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="block">
+      <div class="container">
+        <h2 class="header_title">Nuestro <span>menú</span></h2>
+      </div>
+    </section>
+
+  <!-- Favorite Dishes -->
+  <section class="block block--dark">
     <div class="container">
-      <h2 class="block__header">Platillos <span>favoritos</span></h2>
+      <h2 class="header_title">Platillos <span>favoritos</span></h2>
       <!-- slider -->
       <div class="swiper favorites">
         <div class="swiper-wrapper">
@@ -31,7 +51,6 @@
                 <a>Ordena Aquí</a>
             </div>
           </div>
-          
           <!-- Card 2 -->
           <div class="swiper-slide favorite-slide">
             <div class="favorite-slide__head">
@@ -46,7 +65,6 @@
                 <a>Ordena Aquí</a>
             </div>
           </div>
-
           <!-- Card 3 -->
           <div class="swiper-slide favorite-slide">
             <div class="favorite-slide__head">
@@ -61,19 +79,93 @@
                 <a>Ordena Aquí</a>
             </div>
           </div>
-
-
-
-
         </div>
-
       </div>
-
     </div>
   </section>
+
+  <!-- Costumers Feedback -->
+  <section class="block">
+    <div class="container">
+      <h2 class="header_title">Tu opinión <span>es importante</span></h2>
+
+      <div class="swiper feedback">
+        <div class="swiper-wrapper">
+          <!-- Card 1 -->
+          <blockquote class="swiper-slide feedback__slide">
+            <div class="feedback__slide__quote">
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, mollitia"
+            </div>
+            <div class="feedback__slide__footer">
+              <p>John Doe</p>
+              <img src="images/cara_feliz.svg" alt="">
+            </div>
+          </blockquote>
+          <!-- Card 2 -->
+          <blockquote class="swiper-slide feedback__slide">
+            <div class="feedback__slide__quote">
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, mollitia"
+            </div>
+            <div class="feedback__slide__footer">
+              <p>John Doe</p>
+              <img src="images/cara_feliz.svg" alt="">
+            </div>
+          </blockquote>
+          <!-- Card 3 -->
+          <blockquote class="swiper-slide feedback__slide">
+            <div class="feedback__slide__quote">
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, mollitia"
+            </div>
+            <div class="feedback__slide__footer">
+              <p>John Doe</p>
+              <img src="images/cara_feliz.svg" alt="">
+            </div>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="feedback__btn">
+        <a href="#" class="btn btn-primary btn-icon shadow"><img src="images/write_message.svg"/>Escribir Reseña</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where to find us -->
+  <section class="block">
+    <div class="container">
+      <h2 class="header_title">Dónde <span>encontrarnos</span></h2>
+      <div class="contact-us">
+        <iframe class ="contact-us__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7462.594147043449!2d-99.38710412736566!3d20.738749894624736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3f0b3a4c89681%3A0xb112cfc426d252e7!2sCentro%2C%20Zimap%C3%A1n%2C%20Hgo.!5e0!3m2!1ses-419!2smx!4v1643382178390!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="contact-us__info">
+          <div class="contact-us__info__container">
+            <img src="images/position.svg" alt="" srcset="">
+            <p>Zimpan Centro, 42330, Hidalgo, México</p>
+          </div>
+          <div class="contact-us__info__container">
+            <img src="images/whatsapp.svg" alt="" srcset="">
+            <p>+52 777 222 3343</p>
+          </div>
+          <div class="contact-us__info__container">
+            <img src="images/instagram.svg" alt="" srcset="">
+            <p>@elarriero_restaurante</p>
+          </div>
+          
+          <a href="#" class="btn btn-primary btn-icon shadow"><img src="images/booking.svg"/>Reservar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <img class="footer__logo" src="images/logo.svg" alt="">
+      <p>Restaurante El Arriero © 2022</p>
+    </div>
+  </footer>
   
   <!-- Scripts -->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/favoriteDishesSlider.js"></script>
+  <script src="js/feedbackSlider.js"></script>
 </body>
 </html>
