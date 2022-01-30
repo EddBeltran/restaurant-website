@@ -3,12 +3,14 @@
     border-radius: 20px;
     padding: 8px 20px;
     margin: 3px;
+    cursor: pointer;
 }
 
 .btn-primary {
     @extend %btn;
     background: $primary-color;
     color: #fff;
+    border: 0;
 }
 
 .btn-secondary {
@@ -28,3 +30,9 @@
     }
 
 }
+
+.btn.active {
+    background-color: #fff;
+    color: $primary-color;
+    border: solid 2px $primary-color;
+  }

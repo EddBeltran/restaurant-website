@@ -16,8 +16,21 @@
       <div class="container">
         <h2 class="header_title">Sobre <span>nosotros</span></h2>
         <div class="about-us">
-          <div class="about-us__image">one</div>
-          <div class="about-us__text">two</div>
+          <div class="about-us__image">
+            <img src="images/mexico_1940.jpg" alt="">
+          </div>
+          <div class="about-us__content">
+            <div class="about-us__content__buttons">
+              <a href="#">Historia</a>
+              <a href="#">Tradición</a>
+              <a href="#">Servicios</a>
+            </div>
+            <div class="about-us__content__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat reiciendis tempora obcaecati culpa illum expedita explicabo ipsam necessitatibus sapiente.
+            </div>
+
+
+          </div>
 
         </div>
       </div>
@@ -25,10 +38,247 @@
 
     <!-- Menu -->
     <section class="block">
-      <div class="container">
+      <div class="container menu">
         <h2 class="header_title">Nuestro <span>menú</span></h2>
+        <div class="menu__buttons" id="myBtnContainer">
+          <button class="btn btn-primary menu-category" data-category="desayunos">Desayunos</button>
+          <button class="btn btn-primary menu-category" data-category="platillos">Platillos</button>
+          <button class="btn btn-primary menu-category" data-category="bebidas">Bebidas</button>
+          <button class="btn btn-primary menu-category" data-category="postres">Postres</button>
+        </div>
+        <div class="menu__container grid grid--1x2">
+          <!-- card 1 -->
+          <div class="menu__container-card show" data-category="desayunos">
+            <div class="menu__container-card__img"><img src="images/miniaturas/desayuno_chilaquiles_verdes.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Chilaquiles Verdes</h4>
+                <span>$75</span>
+              </div>
+              <div class="menu__container-card__content__body">Tortillas, tomate, chile</div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="menu__container-card show" data-category="desayunos">
+            <div class="menu__container-card__img"><img src="images/miniaturas/dasayuno_chilaquiles_rojos.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Chilaquiles Rojos</h4>
+                <span>$75</span>
+              </div>
+              <div class="menu__container-card__content__body">Tortillas, jitomate, chile</div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="menu__container-card show" data-category="desayunos">
+            <div class="menu__container-card__img"><img src="images/miniaturas/desayuno_huevos_divorciados.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Huevos Divorciados</h4>
+                <span>$75</span>
+              </div>
+              <div class="menu__container-card__content__body">Huevo, salsa de jitomate, chile</div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="menu__container-card show" data-category="desayunos">
+            <div class="menu__container-card__img"><img src="images/miniaturas/desayuno_enfrijoladas.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Enfrijoladas</h4>
+                <span>$75</span>
+              </div>
+              <div class="menu__container-card__content__body">Frijoles, toritillas, salsa de jitomate, chile</div>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="menu__container-card show" data-category="desayunos">
+            <div class="menu__container-card__img"><img src="images/miniaturas/desayuno_huevos_mexicana.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Huevos a la mexicana</h4>
+                <span>$75</span>
+              </div>
+              <div class="menu__container-card__content__body">Huevo, jitomate, chile</div>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="menu__container-card show" data-category="desayunos">
+            <div class="menu__container-card__img"><img src="images/miniaturas/dasayuno_hot_cakes.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Hot Cakes</h4>
+                <span>$75</span>
+              </div>
+              <div class="menu__container-card__content__body">Platano, fresas, miel</div>
+            </div>
+          </div>
+          <!-- Bebidas -->
+          <!-- card 7 -->
+          <div class="menu__container-card" data-category="bebidas">
+            <div class="menu__container-card__img"><img src="images/miniaturas/bebidas_cerveza.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Cerveza</h4>
+                <span>$35</span>
+              </div>
+              <div class="menu__container-card__content__body">Corona, Modelo, Victoria </div>
+            </div>
+          </div>
+          <!-- card 8 -->
+          <div class="menu__container-card" data-category="bebidas">
+            <div class="menu__container-card__img"><img src="images/miniaturas/bebidas_limonada.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Limonada</h4>
+                <span>$25</span>
+              </div>
+              <div class="menu__container-card__content__body">Natural, agua mineral</div>
+            </div>
+          </div>
+          <!-- card 9 -->
+          <div class="menu__container-card" data-category="bebidas">
+            <div class="menu__container-card__img"><img src="images/miniaturas/bebidas_naranjada.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Naranjada</h4>
+                <span>$25</span>
+              </div>
+              <div class="menu__container-card__content__body">Natural, agua mineral</div>
+            </div>
+          </div>
+          <!-- card 10 -->
+          <div class="menu__container-card" data-category="bebidas">
+            <div class="menu__container-card__img"><img src="images/miniaturas/bebidas_refresco.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Refresco</h4>
+                <span>$25</span>
+              </div>
+              <div class="menu__container-card__content__body">Distintos sabores</div>
+            </div>
+          </div>
+          <!-- platillos -->
+          <!-- card 11 -->
+          <div class="menu__container-card" data-category="platillos">
+            <div class="menu__container-card__img"><img src="images/miniaturas/platillo_chile_nogada.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Chile en nogada</h4>
+                <span>$125</span>
+              </div>
+              <div class="menu__container-card__content__body">Chile, granda, nuez, almendras</div>
+            </div>
+          </div>
+          <!-- card 12 -->
+          <div class="menu__container-card" data-category="platillos">
+            <div class="menu__container-card__img"><img src="images/miniaturas/platillo_pozole.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Pozole</h4>
+                <span>$95</span>
+              </div>
+              <div class="menu__container-card__content__body">Chile, maiz, cerdo, jitomate</div>
+            </div>
+          </div>
+          <!-- card 13 -->
+          <div class="menu__container-card" data-category="platillos">
+            <div class="menu__container-card__img"><img src="images/miniaturas/platillo_enchiladas.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Enchiladas Suizas</h4>
+                <span>$95</span>
+              </div>
+              <div class="menu__container-card__content__body">Chile, maiz, pollo, tomate, queso</div>
+            </div>
+          </div>
+          <!-- card 14 -->
+          <div class="menu__container-card" data-category="platillos">
+            <div class="menu__container-card__img"><img src="images/miniaturas/platillo_filete_pescado.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Filete de Pescado</h4>
+                <span>$95</span>
+              </div>
+              <div class="menu__container-card__content__body">Pescado, tomate, arroz</div>
+            </div>
+          </div>
+          <!-- card 15 -->
+          <div class="menu__container-card" data-category="platillos">
+            <div class="menu__container-card__img"><img src="images/miniaturas/platillo_sopa_azteca.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Sopa Azteca</h4>
+                <span>$95</span>
+              </div>
+              <div class="menu__container-card__content__body">Tortilla de maíz, tomate, aguacate</div>
+            </div>
+          </div>
+          <!-- card 16 -->
+          <div class="menu__container-card" data-category="platillos">
+            <div class="menu__container-card__img"><img src="images/miniaturas/platillo_tacos_dorados.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Tacos dorados</h4>
+                <span>$95</span>
+              </div>
+              <div class="menu__container-card__content__body">Tortilla de maíz, pollo, aguacate</div>
+            </div>
+          </div>
+          <!-- postres -->
+          <!-- card 17 -->
+          <div class="menu__container-card" data-category="postres">
+            <div class="menu__container-card__img"><img src="images/miniaturas/postre_carlota.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Carlota de Limón</h4>
+                <span>$35</span>
+              </div>
+              <div class="menu__container-card__content__body">Limón, galleta Maria, crema</div>
+            </div>
+          </div>
+          <!-- card 18 -->
+          <div class="menu__container-card" data-category="postres">
+            <div class="menu__container-card__img"><img src="images/miniaturas/postre_flan.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Flan de Vainilla</h4>
+                <span>$35</span>
+              </div>
+              <div class="menu__container-card__content__body">Sabor Vainilla</div>
+            </div>
+          </div>
+          <!-- card 19 -->
+          <div class="menu__container-card" data-category="postres">
+            <div class="menu__container-card__img"><img src="images/miniaturas/postre_helado.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Helado</h4>
+                <span>$35</span>
+              </div>
+              <div class="menu__container-card__content__body">Sabores de chocolate, fresa y limón</div>
+            </div>
+          </div>
+          <!-- card 20 -->
+          <div class="menu__container-card" data-category="postres">
+            <div class="menu__container-card__img"><img src="images/miniaturas/postre_arroz_leche.webp" alt="..." loading="lazy"></div>
+            <div class="menu__container-card__content">
+              <div class="menu__container-card__content__header">
+                <h4>Arroz con leche</h4>
+                <span>$35</span>
+              </div>
+              <div class="menu__container-card__content__body">Arroz, leche, canela</div>
+            </div>
+          </div>
+          <!-- End of cards -->
+        </div>
+
+        <div class="feedback__btn">
+          <a href="#" class="btn btn-primary btn-icon shadow"><img src="images/descargar.svg" loading="lazy"/>Descargar Menú</a>
+        </div>
       </div>
     </section>
+  
 
   <!-- Favorite Dishes -->
   <section class="block block--dark">
@@ -40,7 +290,7 @@
           <!-- Card 1 -->
           <div class="swiper-slide favorite-slide">
             <div class="favorite-slide__head">
-              <img src="images/enchiladas.jpg" alt="..." loading="lazy">
+              <img src="images/platillo_enchiladas.jpg" alt="..." loading="lazy">
             </div>
             <div class="favorite-slide__body">
                 <div class="favorite-slide__body__header">
@@ -54,7 +304,7 @@
           <!-- Card 2 -->
           <div class="swiper-slide favorite-slide">
             <div class="favorite-slide__head">
-              <img src="images/chile_nogada.jpg" alt="..." loading="lazy">
+              <img src="images/platillo_chile_nogada.jpg" alt="..." loading="lazy">
             </div>
             <div class="favorite-slide__body">
                 <div class="favorite-slide__body__header">
@@ -68,7 +318,7 @@
           <!-- Card 3 -->
           <div class="swiper-slide favorite-slide">
             <div class="favorite-slide__head">
-              <img src="images/pozole.jpg" alt="..." loading="lazy">
+              <img src="images/platillo_pozole.jpg" alt="..." loading="lazy">
             </div>
             <div class="favorite-slide__body">
                 <div class="favorite-slide__body__header">
@@ -98,7 +348,7 @@
             </div>
             <div class="feedback__slide__footer">
               <p>John Doe</p>
-              <img src="images/cara_feliz.svg" alt="">
+              <img src="images/cara_feliz.svg" alt="..." loading="lazy">
             </div>
           </blockquote>
           <!-- Card 2 -->
@@ -108,7 +358,7 @@
             </div>
             <div class="feedback__slide__footer">
               <p>John Doe</p>
-              <img src="images/cara_feliz.svg" alt="">
+              <img src="images/cara_feliz.svg" alt="..." loading="lazy">
             </div>
           </blockquote>
           <!-- Card 3 -->
@@ -118,14 +368,14 @@
             </div>
             <div class="feedback__slide__footer">
               <p>John Doe</p>
-              <img src="images/cara_feliz.svg" alt="">
+              <img src="images/cara_feliz.svg" alt="..." loading="lazy">
             </div>
           </blockquote>
         </div>
       </div>
 
       <div class="feedback__btn">
-        <a href="#" class="btn btn-primary btn-icon shadow"><img src="images/write_message.svg"/>Escribir Reseña</a>
+        <a href="#" class="btn btn-primary btn-icon shadow"><img src="images/write_message.svg" loading="lazy"/>Escribir Reseña</a>
       </div>
     </div>
   </section>
@@ -138,19 +388,19 @@
         <iframe class ="contact-us__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7462.594147043449!2d-99.38710412736566!3d20.738749894624736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3f0b3a4c89681%3A0xb112cfc426d252e7!2sCentro%2C%20Zimap%C3%A1n%2C%20Hgo.!5e0!3m2!1ses-419!2smx!4v1643382178390!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <div class="contact-us__info">
           <div class="contact-us__info__container">
-            <img src="images/position.svg" alt="" srcset="">
+            <img src="images/position.svg" alt="..." loading="lazy">
             <p>Zimpan Centro, 42330, Hidalgo, México</p>
           </div>
           <div class="contact-us__info__container">
-            <img src="images/whatsapp.svg" alt="" srcset="">
+            <img src="images/whatsapp.svg" alt="" loading="lazy">
             <p>+52 777 222 3343</p>
           </div>
           <div class="contact-us__info__container">
-            <img src="images/instagram.svg" alt="" srcset="">
+            <img src="images/instagram.svg" alt="" loading="lazy">
             <p>@elarriero_restaurante</p>
           </div>
           
-          <a href="#" class="btn btn-primary btn-icon shadow"><img src="images/booking.svg"/>Reservar</a>
+          <a href="#" class="btn btn-primary btn-icon shadow"><img src="images/booking.svg" loading="lazy"/>Reservar</a>
         </div>
       </div>
     </div>
@@ -158,12 +408,13 @@
 
   <footer class="footer">
     <div class="container">
-      <img class="footer__logo" src="images/logo.svg" alt="">
+      <img class="footer__logo" src="images/logo.svg" alt="..." loading="lazy">
       <p>Restaurante El Arriero © 2022</p>
     </div>
   </footer>
   
   <!-- Scripts -->
+  <script src="js/dynamicMenu.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/favoriteDishesSlider.js"></script>
   <script src="js/feedbackSlider.js"></script>

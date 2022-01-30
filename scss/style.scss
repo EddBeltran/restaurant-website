@@ -15,6 +15,8 @@ body {
 
 img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 a {
@@ -32,20 +34,100 @@ a {
 .about-us {
     display: flex;
     justify-content: space-between;
-    height: 200px;
+    border: 2px solid red;
+    
 
     &__image {
-        background: red;
         flex: 1;
-
-
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
     }
-    &__text {
-        background: yellow;
-        flex: 1.5;
-
+    &__content {
+        padding: 2rem;
+        flex: 1;
+        &__buttons {
+            padding-bottom: 2rem;
+            font-size: 1.8rem;
+            a {
+                padding-right: 2rem;
+            }
+        }
+        &__text {
+            font-size: 1.6rem;
+            line-height: 1.7;
+        }
     }
 }
+
+//Menu
+.menu {
+    &__buttons {
+        background: #fff;
+    }
+    &__container {
+        gap: 2rem;
+        overflow: hidden;
+        padding: 2rem 0.5rem;
+        
+        &-card {
+            width: 100%;
+            height: 100px;
+            display: none;
+            box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+
+            &__img {
+                width: 30%;
+            }
+            &__content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+
+                &__header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 1.8rem;
+                    padding-bottom: 1rem;
+
+                    span {
+                        padding-left: 1rem;
+                    }
+                }
+                &__body {
+                    flex:1;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+.show {
+    display: flex;
+    transition: 0.4s all ease-in-out;
+    animation: fade_in_show 0.5s;
+}
+
+@keyframes fade_in_show {
+    0% {
+         opacity: 0;
+         transform: translateY(-50px);
+         //transform: scale(0);
+    }
+
+    100% {
+         opacity: 1;
+         transform: translateY(0);
+         //transform: scale(1);
+    }
+}
+
 
 //Favorite Dishes
 .favorites {
