@@ -27,7 +27,73 @@ a {
     font-size: 2.5rem;
     color: $primary-color;
     span {
-        color: #A4AE9E;
+        color: $accent-color;
+    }
+}
+//nav
+.nav-menu {
+    background: $color-dark;
+    padding: 2rem 0;
+    font-size: 2rem;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        align-items: center;
+        &__logo {
+            display: flex;
+            align-items: center;
+            img {
+                width: 40px;
+                object-fit: contain;
+            }
+            a {
+                font-weight: bold;
+                color: #fff;
+                padding-left: 1rem;
+            }
+        }
+
+    }
+
+
+
+}
+
+//hero
+.hero {
+    height: 500px;
+    display: flex;
+    
+    &__text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            span {
+                color: $accent-color;
+            }
+        }
+        p {
+            font-size: 1.8rem;
+            color: #fff;
+            padding: 2rem 0;
+        }
+        a {
+            width: fit-content;
+        }
+
+    }
+
+    &__image {
+        flex: 1;
+        padding-left: 4rem;
+        img {
+            object-fit: contain;
+        }
     }
 }
 //About Us
@@ -36,9 +102,8 @@ a {
     justify-content: space-between;
     border: 2px solid red;
     
-
     &__image {
-        flex: 1;
+        flex: 1;    
         img {
             height: 100%;
             object-fit: cover;
