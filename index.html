@@ -20,7 +20,16 @@
             <img src="images/favicon.svg" alt="">
             <a href="#">El Arriero</a>
           </div>
-          <div>items</div>
+          <div class="nav__items">
+            <a href="#">Nosotros</a>
+            <a href="#">Menú</a>
+            <a href="#">Reservar</a>
+          </div>
+          <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </nav>
     </div>
   </section>
@@ -72,7 +81,7 @@
       <div class="container menu">
         <h2 class="header_title">Nuestro <span>menú</span></h2>
         <div class="menu__buttons" id="myBtnContainer">
-          <button class="btn btn-primary menu-category" data-category="desayunos">Desayunos</button>
+          <button class="btn btn-primary active menu-category" data-category="desayunos">Desayunos</button>
           <button class="btn btn-primary menu-category" data-category="platillos">Platillos</button>
           <button class="btn btn-primary menu-category" data-category="bebidas">Bebidas</button>
           <button class="btn btn-primary menu-category" data-category="postres">Postres</button>
@@ -445,6 +454,7 @@
   </footer>
   
   <!-- Scripts -->
+  <script src="js/navMenu.js"></script>
   <script src="js/dynamicMenu.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/favoriteDishesSlider.js"></script>

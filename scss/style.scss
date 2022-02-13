@@ -53,11 +53,53 @@ a {
                 padding-left: 1rem;
             }
         }
+        &__items {
+            display: flex;
+            align-items: center;
+            a {
+               color:#fff;
+               margin-left: 2rem;
+               &:hover {
+                   color:rgb(158, 152, 152); 
+               }
+            }
+            :last-child{
+                color:$primary-color;
+                border: 2px solid $primary-color;
+                padding: 0.5rem 1rem;
+                border-radius: 20px;
 
+                &:hover {
+                    background-color: $primary-color;
+                    color: $color-dark;
+                    transition: 0.1s ease-in;
+                }
+            } 
+        }
     }
+}
 
-
-
+.burger {
+    display: none;
+    div {
+        width: 30px;
+        margin: 5px 0;
+        height: 4px;
+        background: #fff;
+    }
+}
+.burger.active {
+    :first-child {
+        transform: rotate(-45deg) translate(-3px, 3px);
+        transition: 0.3s ease-in;
+    }
+    :nth-child(2){
+        display: none;
+    }
+    :last-child {
+        transform: rotate(45deg) translate(-3px, -3px);
+        transition: 0.3s ease-in;
+    }
 }
 
 //hero
