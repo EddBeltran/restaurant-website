@@ -33,6 +33,9 @@
     .about-us {
         flex-direction: column;
         flex-flow: column-reverse;
+        &__content {
+            padding:  0  0   2rem 0 ;
+        }
     }
 
     .contact-us {

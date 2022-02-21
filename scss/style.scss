@@ -23,8 +23,8 @@ a {
     text-decoration: none;
 }
 .header_title {
-    padding: 4rem 0;
-    font-size: 2.5rem;
+    padding: 3rem 0;
+    font-size: 3rem;
     color: $primary-color;
     span {
         color: $accent-color;
@@ -142,7 +142,7 @@ a {
 .about-us {
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
+    //border: 2px solid red;
     
     &__image {
         flex: 1;    
@@ -152,18 +152,41 @@ a {
         }
     }
     &__content {
-        padding: 2rem;
+        padding-left: 2rem;
         flex: 1;
-        &__buttons {
-            padding-bottom: 2rem;
-            font-size: 1.8rem;
-            a {
-                padding-right: 2rem;
-            }
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         &__text {
             font-size: 1.6rem;
             line-height: 1.7;
+
+            &__header {
+                font-size: 2.2rem;
+            }
+        }
+
+        &__icons {
+            justify-content: end;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding: 2rem; 
+
+            &__container {
+                text-align: center;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    object-fit: contain;
+                }
+                p {
+                    padding-top: 1rem;
+                    color: gray;
+                    font-size: 1.3rem;
+                }
+            }
         }
     }
 }
