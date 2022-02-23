@@ -423,7 +423,7 @@
       </div>
 
       <div class="feedback__btn">
-        <a href="#" class="btn btn-primary btn-icon shadow"><img src="images/write_message.svg" alt="..." loading="lazy"/>Escribir Reseña</a>
+        <a id="btn-open-modal" class="btn btn-primary btn-icon shadow"><img src="images/write_message.svg" alt="..." loading="lazy"/>Escribir Reseña</a>
       </div>
     </div>
   </section>
@@ -461,13 +461,25 @@
     </div>
   </footer>
 
-  <!-- Create commets -->
-  <!-- <div class="modal"></div>
+  <!-- Modal feedback -->
+  <div class="modal">
+    <div class="modal__content">
+      <span class="modal__content__close">&times;</span>
+      <p class="modal__content__header">¿Cómo calificas tu experiencia en este restaurante?</p>
+      <div class="modal__content__emojis">
+        <a href="#"><img src="images/cara_muy_mal.svg" alt="..."></a>
+        <a href="#"><img src="images/cara_mal.svg" alt="..."></a>
+        <a href="#"><img src="images/cara_feliz.svg" alt="..."></a>
+        <a href="#"><img src="images/cara_muy_feliz.svg" alt="..."></a>
+      </div>
+      <div class="modal__content__inputs">
+        <textarea></textarea>
+        <p>Escribe al menos 15 caracteres</p>
+        <button class="btn btn-primary">Publicar</button>
+      </div>
+    </div>
 
-  <div class="modal__content">
-    <span class="moclose">x</span>
-    <p>don broo</p>
-  </div> -->
+  </div>
   
   <!-- Scripts -->
   <script src="js/navMenu.js"></script>
@@ -475,5 +487,6 @@
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/favoriteDishesSlider.js"></script>
   <script src="js/feedbackSlider.js"></script>
+  <script src="js/modalBox.js"></script>
 </body>
 </html>

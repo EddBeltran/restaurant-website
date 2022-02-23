@@ -54,3 +54,13 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+//small mobile
+@media screen and (max-width:425px) {
+    .modal {
+        &__content {
+            max-width: 90%;
+        }
+    }
+    
+}

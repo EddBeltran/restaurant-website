@@ -405,6 +405,88 @@ a {
     }
 }
 
+.modal {
+    display: none;
+    background: rgba(1, 1, 1, 0.836);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow: auto;
+    z-index: 10;
+
+    &__content {
+        background: #fff;
+        max-width: 370px;
+        margin: 10% auto;
+        padding: 2rem;
+        text-align: center;
+        position: relative;
+        border-radius: 10px;
+
+        &__close {
+            font-size: 3rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0 1rem;
+            color: gray;
+            cursor: pointer; 
+        }
+
+        &__header {
+            padding-bottom: 2rem;
+            font-size: 2.2rem;
+            color: $color-dark;
+            padding-top: 2rem;
+            font-weight: bold;
+        }
+        
+        &__emojis {
+            display: flex;
+            justify-content: space-around;
+            a {
+                padding: 0.5rem;
+                box-shadow: -4px 4px 5px 1px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+            }
+            a:hover {
+                background: lightblue;
+            }
+        }
+
+        &__inputs {
+            display: flex;
+            flex-direction: column;
+
+            textarea {
+                outline: none;
+                border: 1px solid lightgrey;
+                border-radius: 10px;
+                resize: none;
+                height: 6rem;
+                margin: 2rem 0;
+                padding: 1rem;
+                font-family: $font-stack;
+                font-size: 1.5rem;
+            }
+            p {
+                text-align: left;
+                margin-bottom: 2rem;
+                font-size: 1.3rem;
+            }
+
+            button {
+                font-size: 1.6rem;
+                font-weight: bold;
+                padding: 1.2rem 0;
+                margin: 0;
+            }
+        }
+    }
+}
+
 
 @import 'utilities';
 @import 'mobile';
