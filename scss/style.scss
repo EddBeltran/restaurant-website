@@ -5,8 +5,10 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -282,8 +284,9 @@ a {
             padding: 2rem;
             position: relative;
             color: #FFF5EE;
+            background: darken($color-dark, 4%);
+
             &__header {
-                
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -446,12 +449,17 @@ a {
         &__emojis {
             display: flex;
             justify-content: space-around;
-            a {
+            &__button {
+                border: 0;
                 padding: 0.5rem;
                 box-shadow: -4px 4px 5px 1px rgba(0, 0, 0, 0.1);
                 border-radius: 10px;
+                cursor: pointer;
             }
-            a:hover {
+            &__button:hover {
+                background: lightblue;
+            }
+            &__button.active {
                 background: lightblue;
             }
         }
@@ -460,12 +468,24 @@ a {
             display: flex;
             flex-direction: column;
 
+            input[type=text]{
+                outline: none;
+                border: 1px solid lightgrey;
+                border-radius: 10px;
+                resize: none;
+                height: 4rem;
+                margin-top: 2rem;
+                padding: 1rem;
+                font-family: $font-stack;
+                font-size: 1.5rem;
+            }
+
             textarea {
                 outline: none;
                 border: 1px solid lightgrey;
                 border-radius: 10px;
                 resize: none;
-                height: 6rem;
+                height: 8rem;
                 margin: 2rem 0;
                 padding: 1rem;
                 font-family: $font-stack;
@@ -475,6 +495,8 @@ a {
                 text-align: left;
                 margin-bottom: 2rem;
                 font-size: 1.3rem;
+                display: none;
+                color: rgb(167, 9, 9);
             }
 
             button {

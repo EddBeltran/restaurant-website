@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurante El Arriero</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-  
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml">
 </head>
@@ -21,8 +20,8 @@
             <a href="#">El Arriero</a>
           </div>
           <div class="nav__items">
-            <a href="#">Nosotros</a>
-            <a href="#">Menú</a>
+            <a href="#section__about-us">Nosotros</a>
+            <a href="#section__menu">Menú</a>
             <a href="#">Reservar</a>
           </div>
           <div class="burger">
@@ -41,7 +40,7 @@
         <div class="hero__text">
           <h1>Tenemos la <span>Comida Mexicana</span> que tanto amas</h1>
           <p>Tacos, pozole, enchiladas y mucho más. <br> <strong>¡Te esperamos!</strong></p>
-          <a class="btn btn-primary btn-icon" href="#">Ver Menú</a>
+          <a class="btn btn-primary btn-icon" href="#section__menu">Ver Menú</a>
         </div>
         <div class="hero__image">
           <img src="images/tacos-dorados-pollo.png" alt="">
@@ -52,7 +51,7 @@
   </section>
 
     <!-- About Us -->
-    <section class="block">
+    <section id="section__about-us" class="block">
       <div class="container">
         <h2 class="header_title">Sobre <span>nosotros</span></h2>
         <div class="about-us">
@@ -85,7 +84,7 @@
     </section>
 
     <!-- Menu -->
-    <section class="block">
+    <section id="section__menu" class="block">
       <div class="container menu">
         <h2 class="header_title">Nuestro <span>menú</span></h2>
         <div class="menu__buttons" id="myBtnContainer">
@@ -322,7 +321,7 @@
         </div>
 
         <div class="feedback__btn">
-          <a href="#" class="btn btn-primary btn-icon shadow"><img src="images/descargar.svg" alt="..." loading="lazy"/>Descargar Menú</a>
+          <a href="menu.html" target="_blank" class="btn btn-primary btn-icon shadow"><img src="images/descargar.svg" alt="..." loading="lazy"/>Descargar Menú</a>
         </div>
       </div>
     </section>
@@ -388,7 +387,7 @@
       <h2 class="header_title">Tu opinión <span>es importante</span></h2>
 
       <div class="swiper feedback">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper" id="feedback-cards">
           <!-- Card 1 -->
           <blockquote class="swiper-slide feedback__slide">
             <div class="feedback__slide__quote">
@@ -405,7 +404,7 @@
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, mollitia"
             </div>
             <div class="feedback__slide__footer">
-              <p>John Doe</p>
+              <p>Carl New</p>
               <img src="images/cara_feliz.svg" alt="..." loading="lazy">
             </div>
           </blockquote>
@@ -415,7 +414,7 @@
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, mollitia"
             </div>
             <div class="feedback__slide__footer">
-              <p>John Doe</p>
+              <p>Luis Poe</p>
               <img src="images/cara_feliz.svg" alt="..." loading="lazy">
             </div>
           </blockquote>
@@ -467,15 +466,16 @@
       <span class="modal__content__close">&times;</span>
       <p class="modal__content__header">¿Cómo calificas tu experiencia en este restaurante?</p>
       <div class="modal__content__emojis">
-        <a href="#"><img src="images/cara_muy_mal.svg" alt="..."></a>
-        <a href="#"><img src="images/cara_mal.svg" alt="..."></a>
-        <a href="#"><img src="images/cara_feliz.svg" alt="..."></a>
-        <a href="#"><img src="images/cara_muy_feliz.svg" alt="..."></a>
+        <button class="modal__content__emojis__button" id="muy_mal"><img src="images/cara_muy_mal.svg" alt="..."></button>
+        <button class="modal__content__emojis__button" id="mal"><img src="images/cara_mal.svg" alt="..."></button>
+        <button class="modal__content__emojis__button" id="feliz"><img src="images/cara_feliz.svg" alt="..."></button>
+        <button class="modal__content__emojis__button" id="muy_feliz"><img src="images/cara_muy_feliz.svg" alt="..."></button>
       </div>
       <div class="modal__content__inputs">
-        <textarea></textarea>
-        <p>Escribe al menos 15 caracteres</p>
-        <button class="btn btn-primary">Publicar</button>
+        <input id="input-name" type="text" placeholder="nombre">
+        <textarea id="textarea-feedback" placeholder="reseña"></textarea>
+        <p id="p-warning">Completa los campos faltantes</p>
+        <button class="btn btn-primary" id="publish">Publicar</button>
       </div>
     </div>
 
