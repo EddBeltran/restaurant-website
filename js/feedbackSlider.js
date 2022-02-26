@@ -38,15 +38,12 @@ const textareaFeedback = document.getElementById('textarea-feedback');
 const modalBox = document.querySelector(".modal");
 const pWarning = document.getElementById('p-warning');
 
-
-
-
-let emoji = "feliz";
+let emojiImg = "";
 btnFeedback.forEach((button) => {
     button.addEventListener('click', ()=>{
       clearEmojiStatus();
-      button.classList.add('active');     
-        emoji = button.id;
+      button.classList.add('active');
+      emojiImg = button.firstChild.getAttribute("src");
     });
 });
 
@@ -57,14 +54,14 @@ function clearEmojiStatus(){
 }
 
 btnPublish.addEventListener('click', ()=>{
-  if (textareaFeedback.value.length > 0 && inputName.value.length > 0){
+  if (textareaFeedback.value.length > 0 && inputName.value.length > 0 && emojiImg.length > 0){
     var input = document.createElement("blockquote");
     input.className = 'swiper-slide feedback__slide';
     input.innerHTML = (
         '<div class="feedback__slide__quote">' + textareaFeedback.value + '</div>'
         + '<div class="feedback__slide__footer">'
             +'<p>'+ inputName.value+'</p>'
-            +`<img src="images`+'/'+`cara_`+emoji+`.svg"/>`
+            +'<img src="'+emojiImg+'"/>'
         +'</div>'
     );
     swiperFeedback.addSlide(1, input);
@@ -73,6 +70,7 @@ btnPublish.addEventListener('click', ()=>{
     pWarning.style.display = 'none';
     textareaFeedback.value = '';
     inputName.value = '';
+    emojiImg = "";
     clearEmojiStatus();
     
   } else {
